@@ -37,7 +37,8 @@ i)	LightGBM – 0.84
 ii)	Linear Regression – 0.80
 iii)	RandomForestRegressor – 0.82
 ```
-There are three base models in this code. The 1st model has been trained on all 32 features, the 2nd has been trained on only 15 features selected by the SelectKbest parameter function, and the last has been trained on all 32 features. 
-But the main difference between the 1st and 3rd models was the columns were encoded by a label encoder and one hot encoding, respectively.
-The initial model achieved a higher accuracy of 84% by utilizing all available features compared to the second model, which only used the top 15 performing features and achieved an accuracy of 81%. However, the second model demonstrated better usability by achieving a competitive accuracy with fewer features when compared to the first model.
+There are three base models in this code.
+- The 1st model has been trained on all 32 features, the 2nd has been trained on only 15 features selected by the SelectKbest parameter function, and the last has been trained on all 32 features. 
+- But the main difference between the 1st and 3rd models was the columns were encoded by a label encoder and one hot encoding, respectively.
+- The initial model achieved a higher accuracy of 84% by utilizing all available features compared to the second model, which only used the top 15 performing features and achieved an accuracy of 81%. However, the second model demonstrated better usability by achieving a competitive accuracy with fewer features when compared to the first model.
 
