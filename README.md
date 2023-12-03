@@ -31,7 +31,7 @@ We created a custom function that just needs to pass the model and the input & o
 From the results, we got LightGBM as the best model. Then, after we hyper-tuned this model, we got an accuracy of 84%. Also, we saved the model as a pickle file, which can be used for future predictions while deploying.
 
 ## Results Obtained:
-- we compared three ML models (Linear Regression, Random Forest, and LightGBM) and got the R2 Score as 
+We compared three ML models (Linear Regression, Random Forest, and LightGBM) and got the R2 Score as 
 ```
 i)	LightGBM – 0.84
 ii)	Linear Regression – 0.80
