@@ -30,3 +30,14 @@ In feature engineering, as we need to convert the categorical values into numeri
 We created a custom function that just needs to pass the model and the input & output variables. The function will return us the MSE, R2 Score, and CV Score. Then, we used the Lazy Predict library to get a quick overview of which model performed best on our data.
 From the results, we got LightGBM as the best model. Then, after we hyper-tuned this model, we got an accuracy of 84%. Also, we saved the model as a pickle file, which can be used for future predictions while deploying.
 
+## Results Obtained:
+- we compared three ML models (Linear Regression, Random Forest, and LightGBM) and got the R2 Score as 
+```
+i)	LightGBM – 0.84
+ii)	Linear Regression – 0.80
+iii)	RandomForestRegressor – 0.82
+```
+There are three base models in this code. The 1st model has been trained on all 32 features, the 2nd has been trained on only 15 features selected by the SelectKbest parameter function, and the last has been trained on all 32 features. 
+But the main difference between the 1st and 3rd models was the columns were encoded by a label encoder and one hot encoding, respectively.
+The initial model achieved a higher accuracy of 84% by utilizing all available features compared to the second model, which only used the top 15 performing features and achieved an accuracy of 81%. However, the second model demonstrated better usability by achieving a competitive accuracy with fewer features when compared to the first model.
+
