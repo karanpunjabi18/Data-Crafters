@@ -1,6 +1,10 @@
 # Problem Statement:
 •	The main problem statement here is predicting the students' final grades and identifying the factors affecting the grades.
 
+## Methodology:
+![Methodology_img](https://github.com/karanpunjabi18/Data-Crafters/assets/118504346/ef9a6cf3-9816-4bfe-b25b-ab1fb7b8bba0)
+
+
 ## EDA:
 The data used was clean and contained no null values. So, In EDA, we gained a few insights into the student performance they are,
 1.	there is no apparent correlation between the number of absences and academic grades. This observation may be attributed to the possibility that students who take leaves might compensate by obtaining study materials from their peers or making up for missed content, thereby influencing their grades independently of their attendance record.
@@ -19,4 +23,10 @@ The data used was clean and contained no null values. So, In EDA, we gained a fe
 
 ## Feature Engineering & Data Preprocessing:
 
-In feature engineering, as we need to convert the categorical values into numerical ones, we tried both the methods of one hot encoding and label encoder. Both the encoders almost worked the same and almost got the same accuracies. So, we went with a label encoder because some of the columns were already label encoded.
+In feature engineering, as we need to convert the categorical values into numerical ones, we tried both the methods of one hot encoding and label encoder. Both the encoders almost worked the same and almost got the same accuracies. So, we went with a label encoder because some columns were already label encoded.
+
+## Model Building:
+
+We created a custom function that just needs to pass the model and the input & output variables. The function will return us the MSE, R2 Score, and CV Score. Then, we used the Lazy Predict library to get a quick overview of which model performed best on our data.
+From the results, we got LightGBM as the best model. Then, after we hyper-tuned this model, we got an accuracy of 84%. Also, we saved the model as a pickle file, which can be used for future predictions while deploying.
+
